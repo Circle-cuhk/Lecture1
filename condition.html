@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Lecture 1</title>
+</head>
+
+<body>
+    <p id='hello_world'>Hello ~
+        <p>
+            <script>
+                var expr = 'Papayas';
+                switch (expr) {
+                    case 'Oranges':
+                        console.log('Oranges are $0.59 a pound.');
+                        break;
+                    case 'Mangoes':
+                    case 'Papayas':
+                        console.log('Mangoes and papayas are $2.79 a pound.');
+                        break;
+                    default:
+                        console.log('Sorry, we are out of ' + expr + '.');
+                }
+
+                if (expr === 'Oranges') {
+                    console.log('Oranges are $0.59 a pound.');
+                } else if (expr === 'Mongoes' || expr === 'Papayas') {
+                    console.log('Mongoes and papayas are $2.79 a pound.');
+                } else {
+                    console.log('Sorry, we are out of ' + expr + '.');
+                }
+
+                // Optional
+                console.log(
+                    expr === 'Oranges' ? 'Oranges are $0.59 a pound.' :
+                    expr === 'Mongoes' || expr === 'Papayas' ? 'Mongoes and papayas are $2.79 a pound.' :
+                    'Sorry, we are out of ' + expr + '.'
+                )
+            </script>
+</body>
+
+</html>

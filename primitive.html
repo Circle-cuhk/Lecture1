@@ -1,0 +1,46 @@
+<html>
+	<head>
+	<title>Lecture 1</title>
+	</head>
+	<body>
+		<p id='hello_world'>Hello ~<p>
+		<script>
+			// string
+			var hello  = 'hello_world';
+			console.log('type of hello is: ', typeof(hello))
+			console.log('variable hello is: ', hello);
+			
+			hello = 'hello '
+			hello = hello + 'Circle'
+			
+			console.log('variable hello is: ', hello);
+	
+			// number
+			var three = 3;
+			console.log('type of three is: ', typeof(three));
+			console.log('variable three is: ', three);
+			
+			three += 1;
+			three = ((three + 3) * 2) / 3;
+			console.log(three)
+				
+			// boolean
+			var trueOrFalse = true;
+			console.log('type of trueOrFalse is: ', type of(trueOrFalse));
+			console.log('variable trueOrFalse is: ', trueOrFalse);
+
+			trueOrFalse = ( !trueOrFalse || 1 == 1 ) && !trueOrFalse;
+			console.log('variable trueOrFalse is: ', trueOrFalse); 			
+			
+			// undefined	
+			var undefined_v;
+			console.log('type of undefined is: ', typeof(undefined_v))
+			console.log('variable undefined is: ', undefined_v)
+			
+			// null
+			var nullValue = null;
+			console.log('type of nullValue is: ', typeof(nullValue))
+			console.log('variable nullValue is :', nullValue)
+		</script>
+	</body>
+</html>
