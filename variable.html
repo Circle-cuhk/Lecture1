@@ -1,34 +1,43 @@
 <html>
-	<head>
-	<title>Lecture 1</title>
-	</head>
-	<body>
-		<p id='hello_world'>Hello ~<p>
-		<script>
-		var apple = 1;
-		let guava = 1;
-		
-		console.log(apple)
-		console.log(guava)
-		
-		// the {} will form a scope and all let variables inside will not be revealed outside 
-		{
-			apple = 2;
-			var orange = 2;
-			let banana = 3;
-		}
-		
-		console.log(guava)
-		
-		console.log(apple)
-		
-		console.log(orange)
-		
-		//console.log(banana)
-		
-		// const variables cannot be reassigned
-		const watermelon  = {juicy: true}
-		watermelon = {juicy: false} //ERROR
-		</script>
-	</body>
+
+<head>
+    <title>Lecture 1</title>
+</head>
+
+<body>
+    <p id='hello_world'>Hello ~</p>
+    <script>
+        var apple = 1;
+        let guava = 1;
+
+        console.log(apple)
+        console.log(guava)
+
+        // the {} will form a scope and all let variables inside will not be revealed outside 
+        {
+            apple = 2;
+            var orange = 2;
+            let banana = 3;
+
+            console.log(banana)
+        }
+
+        console.log(guava)
+
+        console.log(apple)
+
+        console.log(orange)
+
+        //console.log(banana)
+
+        // const variables cannot be reassigned
+        const watermelon = {
+            juicy: true
+        }
+        watermelon = {
+                juicy: false
+            } //ERROR
+    </script>
+</body>
+
 </html>

@@ -5,37 +5,37 @@
 </head>
 
 <body>
-    <p id='hello_world'>Hello ~
-        <p>
-            <script>
-                var expr = 'Papayas';
-                switch (expr) {
-                    case 'Oranges':
-                        console.log('Oranges are $0.59 a pound.');
-                        break;
-                    case 'Mangoes':
-                    case 'Papayas':
-                        console.log('Mangoes and papayas are $2.79 a pound.');
-                        break;
-                    default:
-                        console.log('Sorry, we are out of ' + expr + '.');
-                }
+    <p id='hello_world'>Hello ~</p>
+    <script>
+        var fruit = 'Oranges';
 
-                if (expr === 'Oranges') {
-                    console.log('Oranges are $0.59 a pound.');
-                } else if (expr === 'Mongoes' || expr === 'Papayas') {
-                    console.log('Mongoes and papayas are $2.79 a pound.');
-                } else {
-                    console.log('Sorry, we are out of ' + expr + '.');
-                }
+        if (fruit === 'Oranges') {
+            console.log('Oranges are $0.59 a pound.');
+        } else if (fruit === 'Mangoes' || fruit === 'Papayas') {
+            console.log('Mangoes and papayas are $2.79 a pound.');
+        } else {
+            console.log('Sorry, we are out of ' + fruit + '.');
+        }
 
-                // Optional
-                console.log(
-                    expr === 'Oranges' ? 'Oranges are $0.59 a pound.' :
-                    expr === 'Mongoes' || expr === 'Papayas' ? 'Mongoes and papayas are $2.79 a pound.' :
-                    'Sorry, we are out of ' + expr + '.'
-                )
-            </script>
+        switch (fruit) {
+            case 'Oranges':
+                console.log('Oranges are $0.59 a pound.');
+                break;
+            case 'Mangoes':
+            case 'Papayas':
+                console.log('Mangoes and papayas are $2.79 a pound.');
+                break;
+            default:
+                console.log('Sorry, we are out of ' + fruit + '.');
+        }
+
+        // Optional
+        console.log(
+            fruit === 'Oranges' ? 'Oranges are $0.59 a pound.' :
+            fruit === 'Mangoes' || fruit === 'Papayas' ? 'Mangoes and papayas are $2.79 a pound.' :
+            'Sorry, we are out of ' + fruit + '.'
+        )
+    </script>
 </body>
 
 </html>
